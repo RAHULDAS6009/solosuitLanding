@@ -3,10 +3,17 @@
 .bg-primary{
   background-color: #0058f0;
 }
-
+.bg-primary2{
+  background-color: #0355e4;
+}
 .text-primary{
   color: #0058f0;
 }
+
+/* .border-primary{
+  border: ;
+  border-color: #0058f0;
+} */
 
 /* body {
   background: var(--background);

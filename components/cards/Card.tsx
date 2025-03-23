@@ -2,12 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 
-const variants = {
-  primary: "",
-  outlined: "",
-  testimonial: "",
-};
-
+// TODO:card size is changing when it is responsive
 const sizes = {
   sm: "",
   md: "",
@@ -15,7 +10,7 @@ const sizes = {
 };
 
 interface CardProps {
-  variant: "primary" | "secondary" | "testimonial";
+  variant: "primary" ;
   size?: "sm" | "md" | "lg";
   heading: string;
   content: string;
@@ -43,9 +38,9 @@ function Card({
       <div className="bg-white   flex flex-col p-12 items-center justify-start gap-5">
         <Image src={icon} alt={icon} width={60} height={60} />
         <h6 className="text-4xl  font-serif">{heading}</h6>
-        <p className="text-[18px]  font-sans">{content}</p>
+        <p className="text-[18px]  font-sans text-center">{content}</p>
         <Link
-          className="text-[16px] text-primary flex gap-2 items-center "
+          className="text-[16px] text-primary flex gap-2 items-center mt-5"
           href={link}
         >
           {linktitle.toUpperCase()}
