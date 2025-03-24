@@ -30,7 +30,7 @@ export const Button = ({
   return (
     <button
       onClick={onClick}
-      className={`${className} ${variants[variant]}    font-semibold  text-[18px]  cursor-pointer  px-8 py-4 rounded-tl-lg rounded-br-lg  `}
+      className={`${className} ${variants[variant]}    font-semibold  text-[18px] my-2  cursor-pointer  px-8 py-4 rounded-tl-lg rounded-br-lg  `}
     >
       {title}
     </button>
