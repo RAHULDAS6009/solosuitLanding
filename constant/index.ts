@@ -2,7 +2,7 @@ import cardtopicon1 from "@/public/cardimagetop1.svg";
 import cardtopicon2 from "@/public/cardimagetop2.svg";
 import debtlawsuitIcon from "@/public/deblawsuit.svg";
 import rightArrow from "@/public/rightarrow.svg";
-import { SheildIcon } from "@/public/sheild";
+import { SheildIcon } from "@/public/Sheild";
 import { PeopleIcon } from "@/public/People";
 export const navItems = [
   "For Collectors",
