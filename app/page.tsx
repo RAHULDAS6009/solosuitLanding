@@ -2,7 +2,7 @@
 import { NavBar } from "@/components/landing/NavBar";
 import { Hero } from "@/components/landing/Hero";
 import Card from "@/components/cards/Card";
-import { cardItems, numbersItem, testiMonials } from "@/constant";
+import { cardItems, numbersItem } from "@/constant";
 import { Footer } from "@/components/landing/Footer";
 import { useEffect, useRef } from "react";
 

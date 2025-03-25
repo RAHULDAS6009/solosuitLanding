@@ -1,7 +1,6 @@
 import { LinkedinLogo } from "@/public/Linkedin";
 import pointingguy from "@/public/images/pointingguy.webp";
 import Image from "next/image";
-import Link from "next/link";
 
 export function Footer() {
   return (

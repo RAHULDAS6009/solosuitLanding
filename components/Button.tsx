@@ -8,7 +8,6 @@ const variants = {
     "text-primary   bg-white border border-primary hover:bg-primary hover:text-white ",
 };
 
-const sizes = {};
 
 interface ButtonProps {
   onClick?: (e: MouseEvent) => void;
@@ -23,9 +22,7 @@ export const Button = ({
   onClick,
   variant,
   title,
-  size,
   className,
-  children,
 }: ButtonProps) => {
   return (
     <button
