@@ -10,7 +10,7 @@ const sizes = {
 };
 
 interface CardProps {
-  variant: "primary" ;
+  variant: "primary";
   size?: "sm" | "md" | "lg";
   heading: string;
   content: string;
@@ -20,6 +20,7 @@ interface CardProps {
   icon: string;
   debtIcon: string;
   children?: ReactNode;
+  className?: string;
 }
 function Card({
   heading,
@@ -32,10 +33,13 @@ function Card({
   variant,
   debtIcon,
   children,
+  className,
 }: CardProps) {
   return (
-    <div className="max-w-6xl rounded-2xl overflow-hidden  grid lg:grid-cols-2 grid-cols-1 h-[80%] ">
-      <div className="bg-white   flex flex-col p-12 items-center justify-start gap-5">
+    <div
+      className={`${className} max-w-2xl xl:max-w-6xl my-3 xl:my-5 rounded-2xl overflow-hidden  grid lg:grid-cols-2 grid-cols-1 h-[550px]  `}
+    >
+      <div className="bg-white rounded-b-2xl lg:rounded-none xl:rounded-none   flex flex-col p-12 items-center justify-start gap-5">
         <Image src={icon} alt={icon} width={60} height={60} />
         <h6 className="text-4xl  font-serif">{heading}</h6>
         <p className="text-[18px]  font-sans text-center">{content}</p>
@@ -44,7 +48,13 @@ function Card({
           href={link}
         >
           {linktitle.toUpperCase()}
-        <Image className="pt-0.5"  src={linkicon} alt={linkicon} height={14} width={14}  />
+          <Image
+            className="pt-0.5"
+            src={linkicon}
+            alt={linkicon}
+            height={14}
+            width={14}
+          />
         </Link>
       </div>
 
