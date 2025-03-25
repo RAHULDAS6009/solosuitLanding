@@ -9,7 +9,7 @@ import { Button } from "../Button";
 export function Hero(){
     return <section className="grid grid-cols-1 xl:grid-cols-2 xl:mt-24 ">
     <div className="flex flex-col xl:px-16 xl:pl-32    items-center xl:items-start ">
-      <div className="font-serif font-semibold text-[55px] ">
+      <div className="font-serif font-semibold text-[65px] ">
         Resolve <span className="text-primary">debt</span>
       </div>
       <p className="font-sans text-[20px] text-[#697488] px-64 xl:p-0 text-center xl:text-start mb-6 ">
