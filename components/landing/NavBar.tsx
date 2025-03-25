@@ -1,7 +1,7 @@
 import Image from "next/image";
-import solosuit from "../public/Solosuitlogo.svg";
+import solosuit from "@/public/Solosuitlogo.svg";
 import { navItems } from "@/constant";
-import { Button } from "./Button";
+import { Button } from "../Button";
 
 export const NavBar = () => {
   return (
